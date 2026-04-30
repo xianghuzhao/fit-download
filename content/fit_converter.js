@@ -1,0 +1,11 @@
+// Stub: returns a dummy FIT binary for testing the download flow
+// TODO: replace with real FIT conversion
+function convertToFit(streamData) {
+  // Minimal placeholder — not a valid FIT file
+  const dummy = new Uint8Array([
+    0x0E, 0x10, 0xD9, 0x07, 0x00, 0x00, 0x00, 0x00,
+    0x2E, 0x46, 0x49, 0x54, 0x2E, // ".FIT."
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+  ]);
+  return dummy;
+}
